@@ -1,0 +1,7 @@
+com/core/listeners/SimpleResourceListener.class
+com/core/schedulers/SimpleScheduledTask.class
+com/core/models/HelloWorldModel.class
+com/core/package-info.class
+com/core/filters/LoggingFilter.class
+com/core/workflow/PageActivationWorkflow.class
+com/core/servlets/SimpleServlet.class

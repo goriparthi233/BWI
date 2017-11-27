@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,cq.siteadmin.admin.properties]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <moretitles
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="More Titles and Description"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <pagetitle
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                allowBulkEdit="{Boolean}true"
+                                                cq-msm-lockable="pageTitle"
+                                                fieldDescription="Recommended character length for Title is 65"
+                                                fieldLabel="Page Title"
+                                                name="./pageTitle"
+                                                renderReadOnly="{Boolean}true"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                allowBulkEdit="{Boolean}true"
+                                                cq-msm-lockable="jcr:description"
+                                                fieldDescription="Recommended character length for Description is 150. Please use the word “inches” in place of the Inch symbol and the word “and” in place of &amp;"
+                                                fieldLabel="Description"
+                                                name="./jcr:description"
+                                                renderReadOnly="{Boolean}true"/>
+                                        </items>
+                                    </moretitles>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <customProperties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="CustomProperties"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <BWPROP
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        name="./BWPROP"
+                                        fieldLabel="BWPROP Property"
+                                        filedDescription="Enter value to activate page"/>
+                                </items>
+                            </column>
+                        </items>
+                    </customProperties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

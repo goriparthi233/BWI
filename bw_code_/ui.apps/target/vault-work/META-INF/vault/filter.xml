@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/BWI"/>
+    <filter root="/etc/designs/BWI"/>
+    <filter root="/etc/workflow/models/PropertyCheckingWorkflow"/>
+</workspaceFilter>
